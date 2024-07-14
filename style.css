@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
+:root {
+    --branco: #FFF;
+    --backgorund: #e8e9ee;
+    --hora: #333333;
+    --preto-titulo: #464646;
+    --cinza-subtitulo: #A3A3A3;
+    --cinza-gelo: #ECECEC;
+    --laranja: #FFB050;
+    --azul: #4894FF;
+
+}
+
+body {
+    font-family: 'Montserrat';
+    background-color: var(--backgorund);
+    font-weight: 400;
+    padding-bottom: 6em;
+}
+
+.status-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.375em 1em;
+    background-color: var(--branco);
+}
+
+.status-bar__hora {
+    font-size: 14px;
+    color: var(--hora);
+}
+
+.status-bar__niveis {
+    display: flex;
+    gap: 1em;
+}
+
+.perfil-doutor {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    margin: 4em 0 1.9em 1em;
+}
+
+.perfil-doutor__imagem {
+    width: 5em;
+    border-radius: 100%;
+}
+
+.perfil-doutor__boas-vindas {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.boas-vindas__titulo {
+    font-weight: 700;
+    font-size: 22px;
+    color: var(--preto-titulo);
+}
+
+.boas-vindas__subtitulo {
+    font-size: 14px;
+    color: var(--cinza-subtitulo);
+}
+
+.consultas-dia__data {
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--preto-titulo);
+    margin: 0 0 0.5em 1em;
+}
+
+.consultas-dia {
+    margin: 0 1em 1em 1em;
+    border: 1px solid var(--branco);
+    border-radius: 8px;
+    background-color: var(--branco);
+    padding: 1.5em;
+}
+
+.consultas-dia__paciente {
+    display: flex;
+    align-items: center;
+}
+
+.consultas-dia__perfil-paciente {
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+}
+
+.consultas-dia__infos-pacientes {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1em;
+    width: 80%;
+}
+
+.consultas-dia__nome-pacientes {
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--preto-titulo);
+    padding-top: 1em;
+}
+
+.consultas-dia__consulta {
+    display: flex;
+    align-items: center;
+    padding-top: 0.3em;
+    gap: 0.5em;
+}
+
+.consultas-dia__camera {
+    width: 16px;
+}
+
+.consultas-dia__infos-consulta {
+    font-size: 12px;
+    color: var(--cinza-subtitulo);
+}
+
+.consultas-dia__chat-img {
+    width: 32px;
+}
+
+.linha-horizontal {
+    border: none;
+    border-top: 1.5px solid var(--preto-titulo);
+    margin: 1em -1.5em;
+    opacity: 10%;
+}
+
+.consultas-dia__horario {
+    font-weight: 500;
+    font-size: 12px;
+    color: var(--preto-titulo);
+    padding-bottom: 0.8em;
+    padding-left: 1em;
+}
+
+.consultas-dia__opcoes {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+.consultas-dia__ligar-video,
+.consultas-dia__ligar-audio,
+.consultas-dia__endereco {
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 0.85em 1em;
+}
+
+.consultas-dia__ligar-video {
+    border: 1px solid var(--laranja);
+    background-color: var(--laranja);
+    color: var(--branco);
+}
+
+.consultas-dia__ligar-audio {
+    border: 1px solid var(--cinza-gelo);
+    background-color: var(--branco);
+    color: var(--preto-titulo);
+}
+
+.consulta-dia__presencial {
+    width: 13px;
+}
+
+.consultas-dia__opcoes__presencial {
+    border: 1px solid var(--azul);
+    border-radius: 8px;
+    background-color: var(--azul);
+}
+
+.consultas-dia__endereco {
+    color: var(--branco);
+}
+
+.navbar-bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 1em 0.5em;
+    border-top: 1px solid var(--branco);
+    border-radius: 12px 32px 0 0;
+    background-color: var(--branco);
+    box-shadow: 0px -4px 8px 0px #0000000F;
+}
+
+.navbar-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.navbar-item img {
+    width: 24px;
+    height: 24px;
+}
+
+.navbar-item a {
+    text-decoration: none;
+    font-size: 12px;
+    color: var(--preto-titulo);
+    text-align: center;
+    margin-top: 0.2em;
+}
+
+
+.navbar-item a:hover {
+    color: var(--azul);
+}
+
+@media screen and (min-width: 1024px) {
+
+    body {
+        padding-bottom: 3em;
+    }
+
+    .status-bar {
+        display: none;
+    }
+
+    .perfil-doutor {
+        margin-top: 2em;
+    }
+
+    .perfil-doutor__imagem {
+        width: 8em;
+        border-radius: 100%;
+    }
+
+    .boas-vindas__titulo {
+        font-size: 29px;
+    }
+
+    .boas-vindas__subtitulo {
+        font-size: 20px;
+    }
+
+    .consultas-dia__data {
+        font-size: 23px;
+    }
+
+    .consultas-dia__perfil-paciente {
+        width: 55px;
+        height: 55px;
+    }
+
+    .consultas-dia__nome-pacientes {
+        font-size: 20px;
+    }
+
+    .consultas-dia__horario {
+        font-size: 15px;
+    }
+
+    .consultas-dia__ligar-video,
+    .consultas-dia__ligar-audio,
+    .consultas-dia__endereco {
+        font-size: 18px;
+    }
+
+    .consultas {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5em;
+    }
+
+    .consultas-dia {
+        width: 39%;
+        margin: 0 1em 1.5em 1em;
+    }
+
+    .navbar-bottom {
+        padding: 0;
+        border-radius: 12px 12px 0 0;
+    }
+
+    .navbar-item {
+        gap: 0;
+    }
+
+}
+
+@media screen and (min-width: 1728px) {
+
+    body {
+        padding-left: 250px;
+    }
+
+    .consultas-dia {
+        width: 25%;
+        margin: 1em 0.5em 1.5em 1.5em;
+    }
+
+    .navbar-bottom {
+        flex-direction: column;
+        justify-content: flex-start;
+        left: 0;
+        top: 0;
+        width: 200px;
+        border-radius: 0;
+        padding: 2em 0.5em;
+    }
+
+    .navbar-item {
+        flex-direction: row;
+        align-items: center;
+        gap: 1em;
+        margin-bottom: 1.5em;
+    }
+
+    .navbar-item img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .navbar-item a {
+        font-size: 20px;
+    }
+}

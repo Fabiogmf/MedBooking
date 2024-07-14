@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedBooking</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <section class="status-bar">
+        <span class="status-bar__hora">10:30</span>
+        <div class="status-bar__niveis">
+            <img class="status-bar__sinal" src="./images/signal_cellular_4_bar.svg" alt="sinal de rede">
+            <img class="status-bar__bateria" src="./images/battery_full.svg" alt="Nível de bateria">
+            <img class="status-bar__wifi" src="./images/wifi.svg" alt="Sinal de wi-fi">
+        </div>
+
+    </section>
+
+    <header class="perfil-doutor">
+        <img src="./images/perfil-sonia.svg" alt="foto de perfil" class="perfil-doutor__imagem">
+        <div class="perfil-doutor__boas-vindas">
+            <p class="boas-vindas__titulo">Olá, Sônia</p>
+            <p class="boas-vindas__subtitulo">Mais 3 consultas hoje</p>
+        </div>
+    </header>
+
+    <h2 class="consultas-dia__data">Hoje</h2>
+
+    <div class="consultas">
+
+        <section class="consultas-dia">
+            <div class="consultas-dia__paciente">
+                <img src="./images/perfil-1.svg" alt="Paciente Luciana Dias" class="consultas-dia__perfil-paciente">
+                <div class="consultas-dia__infos-pacientes">
+                    <p class="consultas-dia__nome-pacientes">Luciana Dias</p>
+                    <div class="consultas-dia__consulta">
+                        <img src="./images/Camera.svg" alt="Câmera" class="consultas-dia__camera">
+                        <p class="consultas-dia__infos-consulta">Consulta remota</p>
+                    </div>
+                </div>
+                <div class="consultas-dia__chat">
+                    <a href="#"><img src="./images/Chatcirculo1.svg" alt="chat para conversar com paciente"></a>
+                </div>
+            </div>
+
+            <hr class="linha-horizontal">
+            <p class="consultas-dia__horario">14:00 - 15:00 (1 hora)</p>
+            <div class="consultas-dia__opcoes">
+                <a href="#" class="consultas-dia__ligar-video">Ligar por vídeo</a>
+                <a href="#" class="consultas-dia__ligar-audio">Ligar por áudio</a>
+            </div>
+        </section>
+
+        <section class="consultas-dia">
+            <div class="consultas-dia__paciente">
+                <img src="./images/perfil-2.svg" alt="Paciente Larissa Santana" class="consultas-dia__perfil-paciente">
+                <div class="consultas-dia__infos-pacientes">
+                    <p class="consultas-dia__nome-pacientes">Larissa Santana</p>
+                    <div class="consultas-dia__consulta">
+                        <img src="./images/pin.svg" alt="Pin de endereço" class="consulta-dia__presencial">
+                        <p class="consultas-dia__infos-consulta">Consulta no local</p>
+                    </div>
+                </div>
+                <div class="consulta-dia__chat">
+                    <a href="#"><img src="./images/Chatcirculo1.svg" alt="chat para conversar com paciente"></a>
+                </div>
+            </div>
+
+            <hr class="linha-horizontal">
+            <p class="consultas-dia__horario">16:00 - 17:00 (1 hora)</p>
+            <div class="consultas-dia__opcoes consultas-dia__opcoes__presencial ">
+                <a href="#" class="consultas-dia__endereco">Ver endereço</a>
+            </div>
+        </section>
+
+        <section class="consultas-dia">
+            <div class="consultas-dia__paciente">
+                <img src="./images/perfil-4.svg" alt="Paciente Marcos Correia" class="consultas-dia__perfil-paciente">
+                <div class="consultas-dia__infos-pacientes">
+                    <p class="consultas-dia__nome-pacientes">Marcos Correia</p>
+                    <div class="consultas-dia__consulta">
+                        <img src="./images/Camera.svg" alt="Câmera" class="consultas-dia__camera">
+                        <p class="consultas-dia__infos-consulta">Consulta remota</p>
+                    </div>
+                </div>
+                <div class="consultas-dia__chat">
+                    <a href="#"><img src="./images/Chatcirculo1.svg" alt="chat para conversar com paciente"></a>
+                </div>
+            </div>
+
+            <hr class="linha-horizontal">
+            <p class="consultas-dia__horario">17:20 - 18:00 (40 minutos)</p>
+            <div class="consultas-dia__opcoes">
+                <a href="#" class="consultas-dia__ligar-video">Ligar por vídeo</a>
+                <a href="#" class="consultas-dia__ligar-audio">Ligar por áudio</a>
+            </div>
+        </section>
+
+    </div>
+
+    <h2 class="consultas-dia__data">Amanhã</h2>
+
+    <div class="consultas">
+
+        <section class="consultas-dia">
+            <div class="consultas-dia__paciente">
+                <img src="./images/perfil-3.svg" alt="Paciente Clara Lemos" class="consultas-dia__perfil-paciente">
+                <div class="consultas-dia__infos-pacientes">
+                    <p class="consultas-dia__nome-pacientes">Clara Lemos</p>
+                    <div class="consultas-dia__consulta">
+                        <img src="./images/pin.svg" alt="Pin de endereço" class="consulta-dia__presencial">
+                        <p class="consultas-dia__infos-consulta">Consulta no local</p>
+                    </div>
+                </div>
+                <div class="consulta-dia__chat">
+                    <a href="#"><img src="./images/Chatcirculo1.svg" alt="chat para conversar com paciente"></a>
+                </div>
+            </div>
+
+            <hr class="linha-horizontal">
+            <p class="consultas-dia__horario">18:00 - 19:00 (1 hora)</p>
+            <div class="consultas-dia__opcoes consultas-dia__opcoes__presencial ">
+                <a href="#" class="consultas-dia__endereco">Ver endereço</a>
+            </div>
+        </section>
+
+        <section class="consultas-dia">
+            <div class="consultas-dia__paciente">
+                <img src="./images/perfil-1.svg" alt="Paciente Luciana Dias" class="consultas-dia__perfil-paciente">
+                <div class="consultas-dia__infos-pacientes">
+                    <p class="consultas-dia__nome-pacientes">Luciana Dias</p>
+                    <div class="consultas-dia__consulta">
+                        <img src="./images/Camera.svg" alt="Câmera" class="consultas-dia__camera">
+                        <p class="consultas-dia__infos-consulta">Consulta remota</p>
+                    </div>
+                </div>
+                <div class="consultas-dia__chat">
+                    <a href="#"><img src="./images/Chatcirculo1.svg" alt="chat para conversar com paciente"></a>
+                </div>
+            </div>
+
+            <hr class="linha-horizontal">
+            <p class="consultas-dia__horario">20:00 - 21:00 (1 hora)</p>
+            <div class="consultas-dia__opcoes">
+                <a href="#" class="consultas-dia__ligar-video">Ligar por vídeo</a>
+                <a href="#" class="consultas-dia__ligar-audio">Ligar por áudio</a>
+            </div>
+        </section>
+
+        <section class="consultas-dia">
+            <div class="consultas-dia__paciente">
+                <img src="./images/perfil-4.svg" alt="Paciente Marcos Correia" class="consultas-dia__perfil-paciente">
+                <div class="consultas-dia__infos-pacientes">
+                    <p class="consultas-dia__nome-pacientes">Marcos Correia</p>
+                    <div class="consultas-dia__consulta">
+                        <img src="./images/Camera.svg" alt="Câmera" class="consultas-dia__camera">
+                        <p class="consultas-dia__infos-consulta">Consulta remota</p>
+                    </div>
+                </div>
+                <div class="consultas-dia__chat">
+                    <a href="#"><img src="./images/Chatcirculo1.svg" alt="chat para conversar com paciente"></a>
+                </div>
+            </div>
+
+            <hr class="linha-horizontal">
+            <p class="consultas-dia__horario">22:00 - 22:40 (40 minutos)</p>
+            <div class="consultas-dia__opcoes">
+                <a href="#" class="consultas-dia__ligar-video">Ligar por vídeo</a>
+                <a href="#" class="consultas-dia__ligar-audio">Ligar por áudio</a>
+            </div>
+        </section>
+
+        <section class="consultas-dia">
+            <div class="consultas-dia__paciente">
+                <img src="./images/perfil-2.svg" alt="Paciente Larissa Santana" class="consultas-dia__perfil-paciente">
+                <div class="consultas-dia__infos-pacientes">
+                    <p class="consultas-dia__nome-pacientes">Larissa Santana</p>
+                    <div class="consultas-dia__consulta">
+                        <img src="./images/pin.svg" alt="Pin de endereço" class="consulta-dia__presencial">
+                        <p class="consultas-dia__infos-consulta">Consulta no local</p>
+                    </div>
+                </div>
+                <div class="consulta-dia__chat">
+                    <a href="#"><img src="./images/Chatcirculo1.svg" alt="chat para conversar com paciente"></a>
+                </div>
+            </div>
+
+            <hr class="linha-horizontal">
+            <p class="consultas-dia__horario">23:00 - 00:00 (1 hora)</p>
+            <div class="consultas-dia__opcoes consultas-dia__opcoes__presencial ">
+                <a href="#" class="consultas-dia__endereco">Ver endereço</a>
+            </div>
+        </section>
+
+    </div>
+
+
+    <h2 class="consultas-dia__data">Quarta-feira</h2>
+
+    <div class="consultas">
+
+        <section class="consultas-dia">
+            <div class="consultas-dia__paciente">
+                <img src="./images/perfil-3.svg" alt="Paciente Clara Lemos" class="consultas-dia__perfil-paciente">
+                <div class="consultas-dia__infos-pacientes">
+                    <p class="consultas-dia__nome-pacientes">Clara Lemos</p>
+                    <div class="consultas-dia__consulta">
+                        <img src="./images/pin.svg" alt="Pin de endereço" class="consulta-dia__presencial">
+                        <p class="consultas-dia__infos-consulta">Consulta no local</p>
+                    </div>
+                </div>
+                <div class="consulta-dia__chat">
+                    <a href="#"><img src="./images/Chatcirculo1.svg" alt="chat para conversar com paciente"></a>
+                </div>
+            </div>
+
+            <hr class="linha-horizontal">
+            <p class="consultas-dia__horario">18:00 - 19:00 (1 hora)</p>
+            <div class="consultas-dia__opcoes consultas-dia__opcoes__presencial ">
+                <a href="#" class="consultas-dia__endereco">Ver endereço</a>
+            </div>
+        </section>
+
+        <section class="consultas-dia">
+            <div class="consultas-dia__paciente">
+                <img src="./images/perfil-1.svg" alt="Paciente Luciana Dias" class="consultas-dia__perfil-paciente">
+                <div class="consultas-dia__infos-pacientes">
+                    <p class="consultas-dia__nome-pacientes">Luciana Dias</p>
+                    <div class="consultas-dia__consulta">
+                        <img src="./images/Camera.svg" alt="Câmera" class="consultas-dia__camera">
+                        <p class="consultas-dia__infos-consulta">Consulta remota</p>
+                    </div>
+                </div>
+                <div class="consultas-dia__chat">
+                    <a href="#"><img src="./images/Chatcirculo1.svg" alt="chat para conversar com paciente"></a>
+                </div>
+            </div>
+
+            <hr class="linha-horizontal">
+            <p class="consultas-dia__horario">20:00 - 21:00 (1 hora)</p>
+            <div class="consultas-dia__opcoes">
+                <a href="#" class="consultas-dia__ligar-video">Ligar por vídeo</a>
+                <a href="#" class="consultas-dia__ligar-audio">Ligar por áudio</a>
+            </div>
+        </section>
+
+        <section class="consultas-dia">
+            <div class="consultas-dia__paciente">
+                <img src="./images/perfil-4.svg" alt="Paciente Marcos Correia" class="consultas-dia__perfil-paciente">
+                <div class="consultas-dia__infos-pacientes">
+                    <p class="consultas-dia__nome-pacientes">Marcos Correia</p>
+                    <div class="consultas-dia__consulta">
+                        <img src="./images/Camera.svg" alt="Câmera" class="consultas-dia__camera">
+                        <p class="consultas-dia__infos-consulta">Consulta remota</p>
+                    </div>
+                </div>
+                <div class="consultas-dia__chat">
+                    <a href="#"><img src="./images/Chatcirculo1.svg" alt="chat para conversar com paciente"></a>
+                </div>
+            </div>
+
+            <hr class="linha-horizontal">
+            <p class="consultas-dia__horario">22:00 - 22:40 (40 minutos)</p>
+            <div class="consultas-dia__opcoes">
+                <a href="#" class="consultas-dia__ligar-video">Ligar por vídeo</a>
+                <a href="#" class="consultas-dia__ligar-audio">Ligar por áudio</a>
+            </div>
+        </section>
+
+        <section class="consultas-dia">
+            <div class="consultas-dia__paciente">
+                <img src="./images/perfil-2.svg" alt="Paciente Larissa Santana" class="consultas-dia__perfil-paciente">
+                <div class="consultas-dia__infos-pacientes">
+                    <p class="consultas-dia__nome-pacientes">Larissa Santana</p>
+                    <div class="consultas-dia__consulta">
+                        <img src="./images/pin.svg" alt="Pin de endereço" class="consulta-dia__presencial">
+                        <p class="consultas-dia__infos-consulta">Consulta no local</p>
+                    </div>
+                </div>
+                <div class="consulta-dia__chat">
+                    <a href="#"><img src="./images/Chatcirculo1.svg" alt="chat para conversar com paciente"></a>
+                </div>
+            </div>
+
+            <hr class="linha-horizontal">
+            <p class="consultas-dia__horario">23:00 - 00:00 (1 hora)</p>
+            <div class="consultas-dia__opcoes consultas-dia__opcoes__presencial ">
+                <a href="#" class="consultas-dia__endereco">Ver endereço</a>
+            </div>
+        </section>
+
+    </div>
+
+    <nav class="navbar-bottom">
+        <div class="navbar-item">
+            <a href="#"><img src="./images/Calendarioicone.svg" alt="Consultas" class="navbar-image"></a>
+            <a href="#">Consultas</a>
+        </div>
+        <div class="navbar-item">
+            <a href="#"><img src="./images/clientes icone.svg" alt="Pacientes" class="navbar-image"></a>
+            <a href="#">Pacientes</a>
+        </div>
+        <div class="navbar-item">
+            <a href="#"><img src="./images/relatorios icone.svg" alt="Relatórios" class="navbar-image"></a>
+            <a href="#">Relatórios</a>
+        </div>
+        <div class="navbar-item">
+            <a href="#"><img src="./images/menu icone.svg" alt="Menu" class="navbar-image"></a>
+            <a href="#">Menu</a>
+        </div>
+    </nav>
+
+</body>
+
+</html>
