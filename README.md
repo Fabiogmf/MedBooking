@@ -32,7 +32,7 @@ O projeto foi desenvolvido com um foco especial em responsividade para garantir 
 
 1. Faça o download ou clone este repositório.
 2. Abra o arquivo `index.html` em um navegador web.
-3. Clique [aqui](#) para ver o deployment do site.
+3. Clique [aqui](#https://med-booking.vercel.app/#) para ver o deployment do site.
 
 ## Observações
 
